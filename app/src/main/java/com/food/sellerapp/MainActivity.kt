@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.food.sellerapp.ui.SellerFoodApp
 import com.food.sellerapp.ui.theme.SellerAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,23 +20,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             SellerAppTheme {
-                SellerApp()
+                SellerFoodApp()
             }
         }
     }
-}
-
-@Composable
-private fun SellerApp(modifier: Modifier = Modifier) {
-    Column(modifier = modifier
-        .fillMaxSize()
-        .wrapContentSize(align = Alignment.Center)) {
-        Text(text = "Seller App", style = MaterialTheme.typography.h1)
-    }
-}
-
-@Preview(showBackground = true, showSystemUi = true)
-@Composable
-private fun SellerAppPreview() {
-    SellerApp()
 }
