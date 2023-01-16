@@ -19,7 +19,7 @@ import com.food.sellerapp.R
 import com.food.sellerapp.ui.theme.SellerAppTheme
 
 @Composable
-fun LoginScreen(modifier: Modifier = Modifier) {
+fun IntroScreen(modifier: Modifier = Modifier) {
     Column(modifier = modifier.background(MaterialTheme.colors.background)) {
         Card(modifier = modifier
             .weight(1f)
@@ -97,16 +97,16 @@ fun LoginScreen(modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
-private fun LoginScreenLightThemePreview() {
+private fun IntroScreenLightThemePreview() {
     SellerAppTheme(darkTheme = false) {
-        LoginScreen()
+        IntroScreen()
     }
 }
 
 @Preview(showBackground = true, showSystemUi = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
-private fun LoginScreenDarkThemePreview() {
+private fun IntroScreenDarkThemePreview() {
     SellerAppTheme(darkTheme = true) {
-        LoginScreen()
+        IntroScreen()
     }
 }
